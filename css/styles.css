@@ -1,0 +1,49 @@
+/* Geral */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica;
+    color: #333;
+    box-sizing: border-box;
+}
+
+body{
+    /*background-image: url("../img/bg1.jpg");
+    background-position: center;
+    background-size: cover;*/
+}
+
+button{
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+    background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+    background-color: #f9f9f9;
+    color:#666666;
+    border: 1px solid #dcdcdc;
+    padding: .3rem .6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    text-shadow:0px 1px 0px #ffffff;
+}
+
+button:hover {
+	background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+	background-color:#e9e9e9;
+}
+
+button:active {
+	position:relative;
+	top:1px;
+}
+
+button i{
+    pointer-events: none;
+}
+
+input,
+select{
+    padding: 0.25rem 0.5rem;
+}
