@@ -8,9 +8,9 @@
 }
 
 body{
-    /*background-image: url("../img/bg1.jpg");
+    background-image: url("../img/bg4.jpg");
     background-position: center;
-    background-size: cover;*/
+    background-size: cover;
 }
 
 button{
@@ -46,4 +46,98 @@ button i{
 input,
 select{
     padding: 0.25rem 0.5rem;
+}
+
+.hide{
+    display: none;
+}
+
+/* Ajustes da div ToDo */
+/*Header*/
+.todo-container{
+    max-width: 450px;
+    margin: 3rem auto;
+    background-color: #fdfdfd;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.todo-container header{
+    text-align: center;
+    padding: 0 1rem 1rem;
+}
+/*Form*/
+#todo-form, #edit-form{
+    padding: 1rem;
+}
+#todo-form p, #edit-form p{
+    margin-bottom: .5rem;
+    font-weight: bold;
+}
+
+.form-control{
+    display: flex;
+}
+
+.form-control input{
+    margin-right: .3rem;
+}
+
+#cancel-edit-button{
+    margin-top: 1rem;
+}
+
+/* Barra de Ferramentas */
+#toolbar{
+    padding: 1rem;
+    display: flex;
+}
+#toolbar h4{
+    margin-bottom: .5rem;
+}
+
+#search{
+    /*border-right: 1px solid #ddd;*/
+    padding-right: 1rem;
+    margin-right: 1rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+#search form{
+    display: flex;
+}
+#search input{
+    width: 100%;
+    margin-right: .3rem;
+}
+
+#filter{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ToDo List */
+.todo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    transition: .3s;
+}
+.todo h3{
+    flex: 1;
+    font-size: .9rem;
+}
+.todo button{
+    margin-left: .3rem;
+}
+.done{
+    background-color: #666666;
+}
+.done h3{
+    color: #ffffff;
+    text-decoration: line-through;
 }
